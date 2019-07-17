@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="TimelineMax.min.js"></script>
+    <script src="TweenMax.min.js"></script>
+
+
+	<title></title>
+</head>
+<body>
+<ul class="the_list_items">
+	<li class="op6"></li>
+	<li class="op5"></li>
+	<li class="op4"></li>
+	<li class="op3"></li>
+	<li class="op2"></li>
+	<li class="op1"></li>
+</ul>
+
+
+			<style>
+				main {
+    position: relative;
+    border: 2px dotted #000000;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.circle {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    height: 50px;
+    width: 50px;
+    border: 2px dotted #000000;
+    border-radius: 50%;
+}
+
+.circle:nth-child(1) {
+    transform: translateX(250px);
+}
+
+.circle:nth-child(2) {
+    transform: rotate(72deg) translateX(250px);
+}
+
+.circle:nth-child(3) {
+    transform: rotate(144deg) translateX(250px);
+}
+
+.circle:nth-child(4) {
+    transform: rotate(216deg) translateX(250px);
+}
+
+.circle:nth-child(5) {
+    transform: rotate(288deg) translateX(250px);
+}
+			</style>
+
+<div class="main">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+
+
+
+
+
+
+
+	<button class="section_six_button" id="section_six_change">GET IT NOW</button>
+
+	<style>
+#section_six_change:hover{animation: linear 0.5s six_changer forwards;}
+@keyframes six_changer{
+	0%{color:black; background-color:white;}
+	100%{color:white; background-color:black;}
+}
+</style>
+
+<h1>Hover over mouse</h1>
+  <div class="green"></div>
+ 
+
+ <style>
+ 	.green {
+ 		background-color: green;
+ 		width:50px;
+ 		height:50px;
+ 	margin-left: 150px;
+
+
+margin-top:150px;}
+ </style>
+
+
+<script>
+	$(".green").mouseenter(function(){
+  TweenMax.to(this, 1, {height:"250px", width:"350px"})
+})
+
+$(".green").mouseleave(function(){
+  TweenMax.to(this, 1, {height:"10px", width:"10px"})
+})
+
+</script>
+
+
+
+					<div class="team_one">
+												<div class="container" id="backer">
+	<div class="row">
+
+		<div class="col-md-4"></div>
+
+			<div class="col-md-4">
+					<div class="outerbox">
+						<div class="innerbox">
+							<i class="fas fa-3x fa-adjust" id="icon"></i>
+							<p class="people">people</p>
+							<hr class="content_hr">
+							<br>
+							<p class="extra">creating this box</p>
+						</div>	
+					</div>
+			</div>
+
+		<div class="col-md-4"></div>
+
+	</div>
+</div>
+						<div class="team_change" id="color_team_change"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-google-plus-g"></i><i class="fab fa-vimeo-v"></i><i class="fab fa-youtube"></i><i class="fab fa-pinterest-p"></i></div>
+					</div>
+					<p class="section_nine_names">AMANDA SMITH</p>
+					<p class="section_nine_jobtitle">Director</p>
+			</div>
+<style>
+	#color_team_change:hover{animation:linear 0.3s porter forwards;}
+.team_change{background-color:#80deea; position:relative; z-index:50; height:250px; width:350px; 
+	opacity:0.5; color:#80deea; letter-spacing:20px; padding-left:5%; padding-top:30%; font-size:30px;}
+@keyframes porter{
+	0%{background-color:#80deea; opacity:0.3;}
+	50%{background-color:#7296d0; opacity: 0.5;}
+	100%{background-color:#4b428a; opacity: 0.9;}
+}
+</style>
+
+
+
+
+<div class="bring_it_four">
+					<div class="outerbox_four" id="outerbox_fader_four">
+							<div class="innerbox_four">
+								<i class="fas fa-3x fa-images" id="icon_four"></i>
+								<p class="support_text">photos</P>
+								<p class="people_four">people</p>
+								<div class="the_line_four"></div>
+								<br>
+								<p class="extra_four">creating this box</p>
+							</div>	
+						</div>
+					</div>
+					<div class="outerbox_back_four"></div>
+
+					<script >
+						var tl_four = new TimelineMax({paused:true, delay:0.5});
+var outbox_four = $('.outerbox_four');
+var line_four = $('.the_line_four');
+var inner_four = $('.innerbox_four');
+var icons_four = $('#icon_four');
+var peeps_four = $('.people_four');
+var another_four = $('.extra_four');
+var supp_text = $('.support_text');
+
+tl_four.to(outbox_four, 0.1, {opacity: 1});
+tl_four.staggerTo(inner_four, 0.1, {opacity:1});
+tl_four.staggerTo(line_four, 0.1, {width:"100px", opacity:1, ease:Power1.easeOut});
+tl_four.staggerTo(icons_four, 0.1, {y: -30, opacity:1, ease:Power1.easeOut});
+tl_four.staggerTo(peeps_four, 0.1, {y:-25, opacity:1, ease:Power1.easeOut});
+tl_four.staggerTo(supp_text, 0.1, {y:-20, opacity:1, ease:Power1.easeOut});
+tl_four.staggerTo(another_four, 0.1, {y:5, opacity:1, ease:Power1.easeOut});
+
+
+function over_four(){
+  tl_four.play();}
+function out_four(){
+  tl_four.reverse();}
+
+outbox_four.hover(over_four, out_four);
+					</script>
+
+<style>
+	#outerbox_fader_four:hover{animation: linear 0.3s porter forwards; } 
+#outerbox_fader_four::after{opacity: 0; background-color: transparent;}
+	.bring_it_four{ position: absolute; z-index: 50; cursor: pointer; }
+	.outerbox_four{text-align: center; height:250px; width:350px; padding-top:50px; opacity:1;}
+	.innerbox_four{opacity:0; text-align:center; position: relative; z-index:50}
+	#icon_four{color:white;}
+	.support_text{color:white;}
+	.people_four{color:white;}
+	.the_line_four{height:5px; width:1px; background-color:white; margin-left:36%;}
+	.extra_four{color:white;}
+	.outerbox_back_four{background-image:url('porto2.jpg'); background-repeat:no-repeat; background-size:120%; height:250px; width:350px; box-shadow:8px 10px 35px rgba(0,0,0, 0.3);}
+</style>
+
+
+<br style="margin-bottom: 500px;">
+
+<div class="container">
+
+
+
+<div class="left_side"></div>
+<div class="bottom_side"></div>
+<div class="right_side"></div>
+<div class="top_side"></div>
+
+
+</div>
+
+
+
+
+	<div class="row">
+		<div class="col-md-4"></div>
+			<div class="col-md-4">
+					<div class="outerbox" id="outerbox_fade">
+						<div class="innerbox">
+							<i class="fas fa-3x fa-adjust" id="icon"></i>
+							<p class="the_one">ghghghghjghg</p>
+							<p class="people">people</p>
+							<div class="the_line"></div>
+							<br>
+							<p class="extra">creating this box</p>
+						</div>	
+					</div>
+			</div>
+		<div class="col-md-4"></div>
+	</div>
+</div>
+<script>
+var tl = new TimelineMax({paused:true, delay:0.5});
+var outbox = $('.outerbox');
+var line = $('the_line');
+var icons = $('#icon');
+var peeps = $('.people');
+var another = $('.extra');
+var theone = $('the_one');
+
+tl.to(outbox, 0.1, {opacity: 1, backgroundColor:'green'})
+tl.staggerTo(icons, 0.1, {y: -30, opacity:1}, 0.1);
+tl.staggerTo(line, 0.1, {width:"80px", opacity:1});
+tl.staggerTo(theone, 0.1,{y:-50, opactiy:1});
+tl.staggerTo(peeps, 0.1, {y:-25, opacity:1});
+tl.staggerTo(another, 0.1, {y:20, opacity:1});
+
+function over(){
+  tl.play();}
+function out(){
+  tl.reverse();}
+
+outbox.hover(over, out);
+</script>
+<style>
+	.outerbox{text-align: center; width:200px; height:250px; padding-top:50px; opacity:1; background-image: url('porto8.jpg'); background-repeat:no-repeat; background-size:100%;}
+	#outerbox_fade:hover{}
+
+
+
+
+#port_change:hover{animation:linear 0.3s porter forwards;}
+.port_overlay{background-color:#80deea; position:relative; z-index:20; height:100%; width:100%; opacity: 0;}
+@keyframes porter{
+	0%{background-color:#80deea; opacity:0.3;}
+	50%{background-color:#7296d0; opacity: 0.5;}
+	100%{background-color:#6e64b5; opacity: 0.9;}
+}
+
+
+
+
+	.innerbox{background-color: transparent;}
+	#icon{background-color: transparent;}
+	.people{background-color: transparent;}
+	.content_hr{width: 1px; background-color: transparent;}
+	.the_line{height:1px; width:1px; background-color:red; }
+</style>
+<script>
+
+/*
+
+
+	$(".people").mouseenter(function(){
+  TweenMax.to(this, 1, {height:"250px", width:"350px"})
+})
+
+$(".people").mouseleave(function(){
+  TweenMax.to(this, 1, {height:"10px", width:"10px"})
+})
+
+
+
+
+
+
+
+
+
+
+
+	$(".extra").mouseenter(function(){
+  TweenMax.to(this, 1, {height:"250px", width:"350px"})
+})
+
+$(".extra").mouseleave(function(){
+  TweenMax.to(this, 1, {height:"10px", width:"10px"})
+})
+**/
+</script>
+
+
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+
+ <path d="M 175 200 l 150 0" stroke="green" stroke-width="3"
+  fill="none" />
+
+</svg>
+
+
+
+
+
+
+
+
+<!----
+
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-4"></div>
+
+			<div class="col-md-4">
+					<div class="outerbox">
+						<div class="innerbox">
+							<i class="fas fa-3x fa-adjust" id="icon"></i>
+							<p class="people">people</p>
+							<hr class="content_hr">
+							<p class="extra_content">creating this box</p>
+						</div>	
+				</div>
+			</div>
+
+		<div class="col-md-4"></div>
+
+	</div>
+</div>
+
+
+
+<script>
+var move_one = new TimelineMax()
+move.to("#icon", 4, {y:-100, repeat:-1, ease:Linear.easeNone});
+
+var move_two = new TimelineMax()
+move.to(".people", 4, {y:-50, repeat:-1, ease:Linear.easeNone})
+
+
+</script>
+<style>
+	.outerbox{width:150px; text-align: center; padding-top:200px; position: absolute; z-index: 1}
+	.innerbox{position: absolute; z-index: 1}
+
+	#icon{position:absolute; z-index:5; right:1%; left:0;}
+	.people{}
+	.thehr{}
+	.extra_content{position: relative; z-index:6; top:10%;}
+	@keyframes 
+	.creatingbox{}
+</style>
+---->
+
+
+<div class="container">
+		<div class="row">
+				<div class="col-md-6">
+					<div class="center_words">
+				<p class="one_top_title">NOVI BUIDLER</p>
+				<p class="two_top_title">RESPONSIVE & RETINA READY</p>
+				<p class="three_top_title">TONES OF TOOLS FOR REAL LEADS</p>
+				<p class="four_top_title">THOUGHT THROUGH LAYOUT</p>
+				<p class="five_top_title">CLEAN AND CRISPY DESIGN</p>
+				<p class="six_top_title">BUILT FOR SPEED</p>
+				<p class="seven_top_title">FLEXIBLE AND MULTIPURPOSE</p>
+				<p class="eight_top_title">BOOTSTRAP FRAMEWORK</p>
+			</div>
+		</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-2"><button class="button_one">one</button></div>
+					<div class="col-md-2"><button class="button_two">two</button></div>
+					<div class="col-md-2"><button class="button_three">three</button></div>
+					<div class="col-md-2"><button class="button_four">four</button></div>
+					<div class="col-md-2"><button class="button_five">five</button></div>
+					<div class="col-md-2"><button class="button_six">six</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="position-relative">
+<img class="center_words one_top_title" src="central1.jpg">
+<img class="center_words two_top_title" src="central2.jpg">
+<img class="center_words three_top_title" src="central3.jpg">
+<img class="center_words four_top_title" src="central4.jpg">
+<img class="center_words five_top_title" src="central5.jpg">
+<img class="center_words six_top_title" src="central6.jpg">
+</div>
+
+
+
+
+
+<script>
+
+$('.button_one').click(function(){
+hideallimages(); 
+$('.center_words').eq(2).fadeIn(); 
+});
+
+$('.button_two').click(function(){
+hideallimages(); 
+$('.center_words').eq(3).fadeIn(); 
+});
+
+$('.button_three').click(function(){
+hideallimages(); 
+$('.center_words').eq(4).fadeIn(); 
+});
+
+
+$('.button_four').click(function(){
+hideallimages(); 
+$('.center_words').eq(5).fadeIn(); 
+});
+
+$('.button_five').click(function(){
+hideallimages(); 
+$('.center_words').eq(6).fadeIn(); 
+});
+
+$('.button_six').click(function(){
+hideallimages(); 
+$('.center_words').eq(7).fadeIn(); 
+});
+
+function hideallimages(){
+var countelements = $('.center_words').length
+	for (var i = 0; i < countelements; i++) {
+		$('.center_words').eq(i).fadeOut();
+	}
+}	
+</script>
+
+
+
+
+	<Style>
+		.center_words{position: absolute; top:0; left:0; width:600px; height:600px;}
+		.services_options{transition:transform 1s; transform-origin:20px 10px;}
+
+.position-relative{position: relative;}
+.center_words{position: absolute; top:0; left:0; }
+.center_words:nth-child(2){display: none;}
+.center_words:nth-child(3){display: none;}
+.center_words:nth-child(4){display: none;}
+.center_words:nth-child(5){display: none;}
+.center_words:nth-child(6){display: none;}
+.center_words:nth-child(7){display: none;}
+.center_words:nth-child(8){display: none;}
+
+
+.one_top_title{ border-radius:375px; 
+background-size:150%; background-repeat:no-repeat; width:375px; height:375px; position: absolute;}
+.image_novibuilder{color:white; position: absolute;}
+.option_one{
+	background-color:#1f2845; border-radius:70px; width:70px; height:70px; color:grey; text-align:center;
+	transform: rotate(315deg) translateX(250px); position: absolute;
+    left: calc(50% - 20px); top: calc(50% - 20px);
+} 
+#option_one_icon{transform: rotate(15deg) translateX(20px); position: absolute;
+    left: calc(50% - 35px); top: calc(50% - 20px);}
+
+
+
+
+.two_top_title{ border-radius:375px; 
+background-size:180%; background-repeat:no-repeat; width:375px; height:375px; position: absolute;}
+.image_retinaread{color:white; position: absolute;}
+.option_two{
+	background-color:#1f2845; border-radius:70px; width:70px; height:70px; color:grey; text-align:center;
+    transform: rotate(360deg) translateX(250px);
+    position: absolute; left: calc(50% - 20px);top: calc(50% - 15px);
+    padding-top:20px;
+}
+
+.three_top_title{border-radius:375px; 
+background-size:100%; background-repeat:no-repeat; width:375px; height:375px; position: absolute;}
+.tonnesoftools{color:white; position: absolute;}
+.option_three{
+	background-color:#1f2845; border-radius:70px; width:70px; height:70px; color:grey; text-align:center;
+    transform:rotate(45deg) translateX(250px); position: absolute;
+    left: calc(50% - 20px);top: calc(50% - 20px);
+}
+#option_three_icon{transform:rotate(315deg) translateY(4px); position: absolute;
+    left: calc(50% - 21px);top: calc(50% - 20px);}
+
+.four_top_title{ border-radius:375px; 
+background-size:100% 100%; background-repeat:no-repeat; width:375px; height:375px; position: absolute;}
+.throughlayout{color:white; position: absolute;}
+.option_four{
+	background-color:#1f2845; border-radius:70px; height:70px; width:70px; color:grey; text-align:center;
+    transform: rotate(90deg) translateX(250px); position: absolute;
+    left: calc(50% - 20px);top: calc(50% - 20px);
+    padding-top: 20px;
+}
+
+.five_top_title{ border-radius:100%; 
+background-size:100%; width:375px; height:375px; position: absolute;}
+.cleanandcrispy{color:white; position: absolute;}
+.option_five{
+	background-color:#1f2845; border-radius:70px; height:70px; width:70px; color:grey; text-align:center;
+    transform: rotate(135deg) translateX(250px);position: absolute;
+    left: calc(50% - 20px);top: calc(50% - 20px);
+}
+#option_five_icon{transform: rotate(135deg) translateX(5px);position: absolute;
+    left: calc(50% - 13px);top: calc(50% - 15px);}
+
+
+.six_top_title{ border-radius:100%; 
+background-size:125% 100%; background-repeat:no-repeat; width:375px; height:375px; position: absolute;}
+.speed{color:white; position: absolute;}
+.option_six{
+	background-color:#1f2845; border-radius:70px; width:70px; height:70px; color:grey; text-align:center;
+    transform: rotate(180deg) translateX(250px);position: absolute; left: calc(50% - 20px);
+    top: calc(50% - 20px);
+}
+#option_six_icon{transform: rotate(180deg) translateY(-3px);position: absolute; left: calc(50% - 17px);
+    top: calc(50% - 20px);}
+
+.seven_top_title{ border-radius:100%; 
+background-size:100%; width:375px; height:375px; position: absolute;}
+.multipurpose{color:white; position: absolute;}
+.option_seven{
+	background-color:#1f2845; border-radius:70px; width:70px; height:70px; color:grey; text-align:center;
+    transform: rotate(225deg) translateX(250px);position: absolute;
+    left: calc(50% - 20px);top: calc(50% - 20px);
+}
+#option_seven_icon{   transform: rotate(134deg) translateX(5px);position: absolute;
+    left: calc(50% - 15px);top: calc(50% - 17px);}
+/*
+.eight_top_title{background-image:url('central1.jpg'); border-radius:100%; 
+background-repeat:no-repeat; background-size:130% 110%; height:375px; width:375px; position: absolute;}
+.framework{color:white; position: absolute;}
+.option_eight{
+	background-color:#1f2845; border-radius:70px; height:70px; width:70px; color:grey; text-align:center;
+    transform: rotate(270deg) translateX(250px);position: absolute;
+    left: calc(50% - 15px);top: calc(50% - 260px);
+    padding-top:20px; transform:rotate(360deg);
+}
+	</Style>
+
+
+
+
+<!--------------------------------------------->
+<!--------------------------------------------->
+<!--------------------------------------------->
+
+<div class="position-relative">
+	<img class="change_two one_top_title" src="central1.jpg">
+	<img class="change_two two_top_title" src="central2.jpg">
+	<img class="change_two three_top_title" src="central3.jpg">
+	<img class="change_two four_top_title" src="central4.jpg">
+	<img class="change_two five_top_title" src="central5.jpg">
+	<img class="change_two six_top_title" src="central6.jpg">
+	<img class="change_two seven_top_title" src="central7.jpg">
+	<img class="change_two eight_top_title" src="central8.jpg">
+</div>
+
+
+
+<!--------------------------------------------->
+<!--------------------------------------------->
+<!--------------------------------------------->
+
+
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
